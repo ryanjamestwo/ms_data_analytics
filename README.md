@@ -3,6 +3,7 @@
 Hi, this repo contains my projects and papers I've worked on throughout my time at Western Governor's University. It shows off the skills I have developed and that I currently utilize in my career through actual data work. 
 
 # Classes
+The following classes are included in this repository:
 
 ## Data Analytics
 
