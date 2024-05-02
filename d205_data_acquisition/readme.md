@@ -1,7 +1,7 @@
 # Data Acquisition
 
-Data Acquisition builds proficiency in Structured Query Language (SQL) and the initial stages of the data analytics lifecycle. The course introduces relational databases. Students gain concrete skills in data transference and database manipulation.
+Data Cleaning continues building proficiency in the data analytics life cycle with data preparation skills. This course addresses exploring, transforming, and imputing data as well as handling outliers. Learners write code to manipulate, structure, and clean data as well as to reduce features in data sets.
 
-The graduate examines the data available for analysis to determine their dimension, quality, relations, and limitations.
-The graduate implements physical data models.
-The graduate performs table operations and queries within the context of data acquisition for analysis.
+- The graduate predicts potential obstacles in data analysis based on the quality of data provided.
+- The graduate prepares data for analysis to address organizational needs.
+- The graduate writes reusable code to manipulate and clean data in preparation for analysis.
