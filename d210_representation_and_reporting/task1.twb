@@ -1,0 +1,2298 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='churn_clean' inline='true' name='federated.0msxxfo12v21x01h4669g1sdpzoo' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='churn_clean' name='textscan.1pqls9v1ofellm14hlzw505wfppy'>
+            <connection class='textscan' directory='/Users/rjcalabio/Documents/GitHub/ms_data_analytics/d210_representation_and_reporting' filename='churn_clean.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1pqls9v1ofellm14hlzw505wfppy' name='churn_clean.csv' table='[churn_clean#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='CaseOrder' ordinal='0' />
+            <column datatype='string' name='Customer_id' ordinal='1' />
+            <column datatype='string' name='Interaction' ordinal='2' />
+            <column datatype='string' name='UID' ordinal='3' />
+            <column datatype='string' name='City' ordinal='4' />
+            <column datatype='string' name='State' ordinal='5' />
+            <column datatype='string' name='County' ordinal='6' />
+            <column datatype='integer' name='Zip' ordinal='7' />
+            <column datatype='real' name='Lat' ordinal='8' />
+            <column datatype='real' name='Lng' ordinal='9' />
+            <column datatype='integer' name='Population' ordinal='10' />
+            <column datatype='string' name='Area' ordinal='11' />
+            <column datatype='string' name='TimeZone' ordinal='12' />
+            <column datatype='string' name='Job' ordinal='13' />
+            <column datatype='integer' name='Children' ordinal='14' />
+            <column datatype='integer' name='Age' ordinal='15' />
+            <column datatype='real' name='Income' ordinal='16' />
+            <column datatype='string' name='Marital' ordinal='17' />
+            <column datatype='string' name='Gender' ordinal='18' />
+            <column datatype='string' name='Churn' ordinal='19' />
+            <column datatype='real' name='Outage_sec_perweek' ordinal='20' />
+            <column datatype='integer' name='Email' ordinal='21' />
+            <column datatype='integer' name='Contacts' ordinal='22' />
+            <column datatype='integer' name='Yearly_equip_failure' ordinal='23' />
+            <column datatype='string' name='Techie' ordinal='24' />
+            <column datatype='string' name='Contract' ordinal='25' />
+            <column datatype='string' name='Port_modem' ordinal='26' />
+            <column datatype='string' name='Tablet' ordinal='27' />
+            <column datatype='string' name='InternetService' ordinal='28' />
+            <column datatype='string' name='Phone' ordinal='29' />
+            <column datatype='string' name='Multiple' ordinal='30' />
+            <column datatype='string' name='OnlineSecurity' ordinal='31' />
+            <column datatype='string' name='OnlineBackup' ordinal='32' />
+            <column datatype='string' name='DeviceProtection' ordinal='33' />
+            <column datatype='string' name='TechSupport' ordinal='34' />
+            <column datatype='string' name='StreamingTV' ordinal='35' />
+            <column datatype='string' name='StreamingMovies' ordinal='36' />
+            <column datatype='string' name='PaperlessBilling' ordinal='37' />
+            <column datatype='string' name='PaymentMethod' ordinal='38' />
+            <column datatype='real' name='Tenure' ordinal='39' />
+            <column datatype='real' name='MonthlyCharge' ordinal='40' />
+            <column datatype='real' name='Bandwidth_GB_Year' ordinal='41' />
+            <column datatype='integer' name='Item1' ordinal='42' />
+            <column datatype='integer' name='Item2' ordinal='43' />
+            <column datatype='integer' name='Item3' ordinal='44' />
+            <column datatype='integer' name='Item4' ordinal='45' />
+            <column datatype='integer' name='Item5' ordinal='46' />
+            <column datatype='integer' name='Item6' ordinal='47' />
+            <column datatype='integer' name='Item7' ordinal='48' />
+            <column datatype='integer' name='Item8' ordinal='49' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CaseOrder</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CaseOrder]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>CaseOrder</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Customer_id]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Customer_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Interaction</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Interaction]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Interaction</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>UID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[UID]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>UID</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>County</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[County]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>County</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Zip</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Zip]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Zip</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lat</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Lat]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Lat</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lng</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Lng]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Lng</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Population</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Population]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Population</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Area</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Area]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Area</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TimeZone</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TimeZone]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>TimeZone</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Job</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Job]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Job</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Children</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Children]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Children</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Income</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Income]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Income</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Marital</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Marital]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Marital</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Churn</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Churn]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Churn</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Outage_sec_perweek</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Outage_sec_perweek]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Outage_sec_perweek</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Email</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Email]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Email</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Contacts</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Contacts]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Contacts</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Yearly_equip_failure</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Yearly_equip_failure]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Yearly_equip_failure</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Techie</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Techie]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Techie</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Contract</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Contract]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Contract</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Port_modem</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Port_modem]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Port_modem</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tablet</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Tablet]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Tablet</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>InternetService</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[InternetService]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>InternetService</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Phone</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Phone]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Phone</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Multiple</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Multiple]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Multiple</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OnlineSecurity</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[OnlineSecurity]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>OnlineSecurity</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OnlineBackup</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[OnlineBackup]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>OnlineBackup</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DeviceProtection</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DeviceProtection]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>DeviceProtection</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TechSupport</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TechSupport]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>TechSupport</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StreamingTV</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[StreamingTV]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>StreamingTV</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StreamingMovies</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[StreamingMovies]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>StreamingMovies</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PaperlessBilling</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PaperlessBilling]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>PaperlessBilling</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PaymentMethod</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PaymentMethod]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>PaymentMethod</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tenure</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Tenure]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Tenure</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MonthlyCharge</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[MonthlyCharge]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>MonthlyCharge</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bandwidth_GB_Year</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Bandwidth_GB_Year]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Bandwidth_GB_Year</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Item1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Item1]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Item1</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Item2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Item2]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Item2</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Item3</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Item3]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Item3</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Item4</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Item4]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Item4</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Item5</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Item5]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Item5</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Item6</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Item6]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Item6</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Item7</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Item7]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Item7</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Item8</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Item8]</local-name>
+            <parent-name>[churn_clean.csv]</parent-name>
+            <remote-alias>Item8</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Bandwidth GB Year' datatype='real' name='[Bandwidth_GB_Year]' role='dimension' type='quantitative' />
+      <column caption='Case Order' datatype='integer' name='[CaseOrder]' role='measure' type='quantitative' />
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='string' name='[County]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column caption='Customer id' datatype='string' name='[Customer_id]' role='dimension' type='nominal' />
+      <column caption='Device Protection' datatype='string' name='[DeviceProtection]' role='dimension' type='nominal' />
+      <column caption='Internet Service' datatype='string' name='[InternetService]' role='dimension' type='nominal' />
+      <column aggregation='Avg' datatype='real' name='[Lat]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column caption='Monthly Charge' datatype='real' name='[MonthlyCharge]' role='measure' type='quantitative' />
+      <column caption='Online Backup' datatype='string' name='[OnlineBackup]' role='dimension' type='nominal' />
+      <column caption='Online Security' datatype='string' name='[OnlineSecurity]' role='dimension' type='nominal' />
+      <column caption='Outage sec perweek' datatype='real' name='[Outage_sec_perweek]' role='measure' type='quantitative' />
+      <column caption='Paperless Billing' datatype='string' name='[PaperlessBilling]' role='dimension' type='nominal' />
+      <column caption='Payment Method' datatype='string' name='[PaymentMethod]' role='dimension' type='nominal' />
+      <column caption='Port modem' datatype='string' name='[Port_modem]' role='dimension' type='nominal' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Streaming Movies' datatype='string' name='[StreamingMovies]' role='dimension' type='nominal' />
+      <column caption='Streaming TV' datatype='string' name='[StreamingTV]' role='dimension' type='nominal' />
+      <column caption='Tech Support' datatype='string' name='[TechSupport]' role='dimension' type='nominal' />
+      <column caption='Time Zone' datatype='string' name='[TimeZone]' role='dimension' type='nominal' />
+      <column caption='Yearly equip failure' datatype='integer' name='[Yearly_equip_failure]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='integer' default-format='*00000' name='[Zip]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column caption='churn_clean.csv' datatype='table' name='[__tableau_internal_object_id__].[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/b1/vym1dz6s5nd_knffxwjvddwc0000gn/T/tableau-temp/#TableauTemp_180eequ1scrqef10din6k1lidg61.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='12/22/2024 10:43:17 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>CaseOrder</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[CaseOrder]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CaseOrder</remote-alias>
+              <ordinal>0</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10000</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Customer_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Customer_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Customer_id</remote-alias>
+              <ordinal>1</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10000</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Interaction</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Interaction]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Interaction</remote-alias>
+              <ordinal>2</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10000</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>UID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[UID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>UID</remote-alias>
+              <ordinal>3</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10000</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>City</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[City]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>City</remote-alias>
+              <ordinal>4</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3599</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>State</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[State]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>State</remote-alias>
+              <ordinal>5</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>52</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>County</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[County]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>County</remote-alias>
+              <ordinal>6</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1379</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Zip</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Zip]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Zip</remote-alias>
+              <ordinal>7</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5505</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Lat</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Lat]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Lat</remote-alias>
+              <ordinal>8</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5505</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Lng</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Lng]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Lng</remote-alias>
+              <ordinal>9</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5505</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Population</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Population]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Population</remote-alias>
+              <ordinal>10</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3624</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Area</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Area]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Area</remote-alias>
+              <ordinal>11</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TimeZone</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[TimeZone]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TimeZone</remote-alias>
+              <ordinal>12</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Job</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Job]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Job</remote-alias>
+              <ordinal>13</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>938</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Children</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Children]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Children</remote-alias>
+              <ordinal>14</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Age</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Age</remote-alias>
+              <ordinal>15</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>72</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Income</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Income]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Income</remote-alias>
+              <ordinal>16</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10000</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Marital</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Marital]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Marital</remote-alias>
+              <ordinal>17</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Gender</remote-alias>
+              <ordinal>18</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Churn</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Churn]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Churn</remote-alias>
+              <ordinal>19</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Outage_sec_perweek</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Outage_sec_perweek]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Outage_sec_perweek</remote-alias>
+              <ordinal>20</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9601</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Email</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Email]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Email</remote-alias>
+              <ordinal>21</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Contacts</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Contacts]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Contacts</remote-alias>
+              <ordinal>22</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Yearly_equip_failure</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Yearly_equip_failure]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Yearly_equip_failure</remote-alias>
+              <ordinal>23</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Techie</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Techie]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Techie</remote-alias>
+              <ordinal>24</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Contract</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Contract]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Contract</remote-alias>
+              <ordinal>25</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Port_modem</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Port_modem]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Port_modem</remote-alias>
+              <ordinal>26</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Tablet</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Tablet]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Tablet</remote-alias>
+              <ordinal>27</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>InternetService</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[InternetService]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>InternetService</remote-alias>
+              <ordinal>28</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Phone</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Phone]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Phone</remote-alias>
+              <ordinal>29</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Multiple</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Multiple]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Multiple</remote-alias>
+              <ordinal>30</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>OnlineSecurity</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[OnlineSecurity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>OnlineSecurity</remote-alias>
+              <ordinal>31</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>OnlineBackup</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[OnlineBackup]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>OnlineBackup</remote-alias>
+              <ordinal>32</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DeviceProtection</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[DeviceProtection]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DeviceProtection</remote-alias>
+              <ordinal>33</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TechSupport</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[TechSupport]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TechSupport</remote-alias>
+              <ordinal>34</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>StreamingTV</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[StreamingTV]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>StreamingTV</remote-alias>
+              <ordinal>35</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>StreamingMovies</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[StreamingMovies]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>StreamingMovies</remote-alias>
+              <ordinal>36</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PaperlessBilling</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[PaperlessBilling]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PaperlessBilling</remote-alias>
+              <ordinal>37</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PaymentMethod</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[PaymentMethod]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PaymentMethod</remote-alias>
+              <ordinal>38</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Tenure</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Tenure]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Tenure</remote-alias>
+              <ordinal>39</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10000</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MonthlyCharge</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[MonthlyCharge]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MonthlyCharge</remote-alias>
+              <ordinal>40</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>896</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Bandwidth_GB_Year</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Bandwidth_GB_Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Bandwidth_GB_Year</remote-alias>
+              <ordinal>41</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10000</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Item1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Item1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Item1</remote-alias>
+              <ordinal>42</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Item2</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Item2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Item2</remote-alias>
+              <ordinal>43</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Item3</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Item3]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Item3</remote-alias>
+              <ordinal>44</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Item4</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Item4]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Item4</remote-alias>
+              <ordinal>45</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Item5</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Item5]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Item5</remote-alias>
+              <ordinal>46</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Item6</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Item6]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Item6</remote-alias>
+              <ordinal>47</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Item7</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Item7]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Item7</remote-alias>
+              <ordinal>48</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Item8</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Item8]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Item8</remote-alias>
+              <ordinal>49</ordinal>
+              <family>churn_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='churn_clean.csv' id='churn_clean.csv_D0DA1B3ADF4C433E9031DC1E0AC21D7B'>
+            <properties context=''>
+              <relation connection='textscan.1pqls9v1ofellm14hlzw505wfppy' name='churn_clean.csv' table='[churn_clean#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='CaseOrder' ordinal='0' />
+                  <column datatype='string' name='Customer_id' ordinal='1' />
+                  <column datatype='string' name='Interaction' ordinal='2' />
+                  <column datatype='string' name='UID' ordinal='3' />
+                  <column datatype='string' name='City' ordinal='4' />
+                  <column datatype='string' name='State' ordinal='5' />
+                  <column datatype='string' name='County' ordinal='6' />
+                  <column datatype='integer' name='Zip' ordinal='7' />
+                  <column datatype='real' name='Lat' ordinal='8' />
+                  <column datatype='real' name='Lng' ordinal='9' />
+                  <column datatype='integer' name='Population' ordinal='10' />
+                  <column datatype='string' name='Area' ordinal='11' />
+                  <column datatype='string' name='TimeZone' ordinal='12' />
+                  <column datatype='string' name='Job' ordinal='13' />
+                  <column datatype='integer' name='Children' ordinal='14' />
+                  <column datatype='integer' name='Age' ordinal='15' />
+                  <column datatype='real' name='Income' ordinal='16' />
+                  <column datatype='string' name='Marital' ordinal='17' />
+                  <column datatype='string' name='Gender' ordinal='18' />
+                  <column datatype='string' name='Churn' ordinal='19' />
+                  <column datatype='real' name='Outage_sec_perweek' ordinal='20' />
+                  <column datatype='integer' name='Email' ordinal='21' />
+                  <column datatype='integer' name='Contacts' ordinal='22' />
+                  <column datatype='integer' name='Yearly_equip_failure' ordinal='23' />
+                  <column datatype='string' name='Techie' ordinal='24' />
+                  <column datatype='string' name='Contract' ordinal='25' />
+                  <column datatype='string' name='Port_modem' ordinal='26' />
+                  <column datatype='string' name='Tablet' ordinal='27' />
+                  <column datatype='string' name='InternetService' ordinal='28' />
+                  <column datatype='string' name='Phone' ordinal='29' />
+                  <column datatype='string' name='Multiple' ordinal='30' />
+                  <column datatype='string' name='OnlineSecurity' ordinal='31' />
+                  <column datatype='string' name='OnlineBackup' ordinal='32' />
+                  <column datatype='string' name='DeviceProtection' ordinal='33' />
+                  <column datatype='string' name='TechSupport' ordinal='34' />
+                  <column datatype='string' name='StreamingTV' ordinal='35' />
+                  <column datatype='string' name='StreamingMovies' ordinal='36' />
+                  <column datatype='string' name='PaperlessBilling' ordinal='37' />
+                  <column datatype='string' name='PaymentMethod' ordinal='38' />
+                  <column datatype='real' name='Tenure' ordinal='39' />
+                  <column datatype='real' name='MonthlyCharge' ordinal='40' />
+                  <column datatype='real' name='Bandwidth_GB_Year' ordinal='41' />
+                  <column datatype='integer' name='Item1' ordinal='42' />
+                  <column datatype='integer' name='Item2' ordinal='43' />
+                  <column datatype='integer' name='Item3' ordinal='44' />
+                  <column datatype='integer' name='Item4' ordinal='45' />
+                  <column datatype='integer' name='Item5' ordinal='46' />
+                  <column datatype='integer' name='Item6' ordinal='47' />
+                  <column datatype='integer' name='Item7' ordinal='48' />
+                  <column datatype='integer' name='Item8' ordinal='49' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Filter1' name='[Action1_8B517E2246E34B0387B182A0388D9D95]'>
+      <source dashboard='Task1 Dashboard' type='sheet' />
+      <link caption='Filter1' delimiter=',' escape='\' expression='tsl:Task1%20Dashboard?%5Bfederated.0msxxfo12v21x01h4669g1sdpzoo%5D.%5BState%5D~s0=&lt;[federated.0msxxfo12v21x01h4669g1sdpzoo].[State]~na&gt;' include-null='true' multi-select='true' url-escape='true' />
+      <command command='tsc:tsl-filter'>
+        <param name='target' value='Task1 Dashboard' />
+      </command>
+    </action>
+    <action caption='Filter2' name='[Action2_ECE9E73039EC40E2B9AF5B776011126A]'>
+      <source dashboard='Task1 Dashboard' type='sheet' />
+      <link caption='Filter2' delimiter=',' escape='\' expression='tsl:Task1%20Dashboard?%5Bfederated.0msxxfo12v21x01h4669g1sdpzoo%5D.%5BIncome%5D~s0=&lt;[federated.0msxxfo12v21x01h4669g1sdpzoo].[Income]~na&gt;&amp;%5Bfederated.0msxxfo12v21x01h4669g1sdpzoo%5D.%5BMonthlyCharge%5D~s0=&lt;[federated.0msxxfo12v21x01h4669g1sdpzoo].[MonthlyCharge]~na&gt;&amp;%5Bfederated.0msxxfo12v21x01h4669g1sdpzoo%5D.%5BState%5D~s0=&lt;[federated.0msxxfo12v21x01h4669g1sdpzoo].[State]~na&gt;' include-null='true' multi-select='true' url-escape='true' />
+      <command command='tsc:tsl-filter'>
+        <param name='target' value='Task1 Dashboard' />
+      </command>
+    </action>
+    <datasources>
+      <datasource caption='churn_clean' name='federated.0msxxfo12v21x01h4669g1sdpzoo' />
+    </datasources>
+    <datasource-dependencies datasource='federated.0msxxfo12v21x01h4669g1sdpzoo'>
+      <column datatype='real' name='[Income]' role='measure' type='quantitative' />
+      <column caption='Monthly Charge' datatype='real' name='[MonthlyCharge]' role='measure' type='quantitative' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+    </datasource-dependencies>
+  </actions>
+  <worksheets>
+    <worksheet name='Avg Income &amp; Avg Monthly Charge by State'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='churn_clean' name='federated.0msxxfo12v21x01h4669g1sdpzoo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0msxxfo12v21x01h4669g1sdpzoo'>
+            <column datatype='real' name='[Income]' role='measure' type='quantitative' />
+            <column caption='Monthly Charge' datatype='real' name='[MonthlyCharge]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Income]' derivation='Avg' name='[avg:Income:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[MonthlyCharge]' derivation='Avg' name='[avg:MonthlyCharge:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0msxxfo12v21x01h4669g1sdpzoo].[none:State:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0msxxfo12v21x01h4669g1sdpzoo].[avg:Income:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0msxxfo12v21x01h4669g1sdpzoo].[avg:Income:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0msxxfo12v21x01h4669g1sdpzoo].[avg:Income:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0msxxfo12v21x01h4669g1sdpzoo].[avg:MonthlyCharge:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0msxxfo12v21x01h4669g1sdpzoo].[none:State:nk]</rows>
+        <cols>([federated.0msxxfo12v21x01h4669g1sdpzoo].[avg:Income:qk] + [federated.0msxxfo12v21x01h4669g1sdpzoo].[avg:MonthlyCharge:qk])</cols>
+      </table>
+      <simple-id uuid='{61F1D8F0-9E60-49FA-AF89-90D4FBEB4051}' />
+    </worksheet>
+    <worksheet name='Customers by Gender'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='churn_clean' name='federated.0msxxfo12v21x01h4669g1sdpzoo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0msxxfo12v21x01h4669g1sdpzoo'>
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Population]' role='measure' type='quantitative' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Population]' derivation='Sum' name='[sum:Population:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.0msxxfo12v21x01h4669g1sdpzoo].[none:Gender:nk]' />
+              <wedge-size column='[federated.0msxxfo12v21x01h4669g1sdpzoo].[sum:Population:qk]' />
+              <size column='[federated.0msxxfo12v21x01h4669g1sdpzoo].[sum:Population:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{D189E06E-848D-4C7E-918B-C744BE3D7061}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Task1 Dashboard'>
+      <style />
+      <size maxheight='720' maxwidth='1200' minheight='720' minwidth='1200' preset-index='1' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97778' id='15' param='horz' type-v2='layout-flow' w='98666' x='667' y='1111'>
+            <zone h='97778' id='8' type-v2='layout-basic' w='98666' x='667' y='1111'>
+              <zone h='44803' id='3' name='Avg Income &amp; Avg Monthly Charge by State' w='49332' x='667' y='9284'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone forceUpdate='true' h='8173' id='5' type-v2='text' w='98666' x='667' y='1111'>
+                <formatted-text>
+                  <run fontsize='28'>Task 1 Dashboard</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='89605' id='11' param='horz' type-v2='layout-flow' w='49334' x='49999' y='9284'>
+                <zone h='89605' id='12' param='vert' type-v2='layout-flow' w='49334' x='49999' y='9284'>
+                  <zone h='33194' id='13' name='Customers by Gender' w='49334' x='49999' y='9284'>
+                    <layout-cache fixed-size-h='231' fixed-size-w='160' type-h='fixed' type-w='fixed' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='11944' id='16' name='Customers by Gender' pane-specification-id='0' param='[federated.0msxxfo12v21x01h4669g1sdpzoo].[none:Gender:nk]' type-v2='color' w='49334' x='49999' y='42478'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='44467' id='18' param='vert' type-v2='layout-flow' w='49334' x='49999' y='54422' />
+                </zone>
+              </zone>
+              <zone h='44802' id='19' param='vert' type-v2='layout-flow' w='49332' x='667' y='54087' />
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='21' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97778' id='20' param='vert' type-v2='layout-flow' w='98666' x='667' y='1111'>
+                <zone forceUpdate='true' h='8173' id='5' type-v2='text' w='98666' x='667' y='1111'>
+                  <formatted-text>
+                    <run fontsize='28'>Task 1 Dashboard</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='44803' id='3' is-fixed='true' name='Avg Income &amp; Avg Monthly Charge by State' w='49332' x='667' y='9284'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='231' h='33194' id='13' is-fixed='true' name='Customers by Gender' w='49334' x='49999' y='9284'>
+                  <layout-cache fixed-size-h='231' fixed-size-w='160' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='11944' id='16' name='Customers by Gender' pane-specification-id='0' param='[federated.0msxxfo12v21x01h4669g1sdpzoo].[none:Gender:nk]' type-v2='color' w='49334' x='49999' y='42478'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{26901D1F-199C-4489-AAD3-FF01AA50E08A}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Avg Income &amp; Avg Monthly Charge by State'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1A01C9A7-CA40-4D0F-B1BD-C3CD54FA1FED}' />
+    </window>
+    <window class='worksheet' name='Customers by Gender'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0msxxfo12v21x01h4669g1sdpzoo].[none:Gender:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0msxxfo12v21x01h4669g1sdpzoo].[sum:Population:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B2BE4A25-8BBF-4AFD-9609-B98ADAC77EDA}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Task1 Dashboard'>
+      <viewpoints>
+        <viewpoint name='Avg Income &amp; Avg Monthly Charge by State' />
+        <viewpoint name='Customers by Gender' />
+      </viewpoints>
+      <active id='19' />
+      <simple-id uuid='{1B92F6BB-265D-4DBD-9C7E-3BC776109552}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='384' name='Task1 Dashboard' width='384'>
+      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
+      NTIyok2bNumll16SJK1bt05z586NbPvgwYPq6+uTJBUVFWnBggU350X5CwsGg8rNzVUwGFQ4
+      HFZNTY02b96suro65efna+/evYqLi1M4HNbu3buvuu+cOXPU09OjsbExjYyMaNasWRoaGtL2
+      7dsVExOjRYsWaebMmXr//fc1OjqqsrIyvfvuu/J4PCovL9f58+e1detW+Xw+5efnS5K2bt2q
+      p59+Wvv371d2drbuu+8+vfPOO3rqqafk9/slSbW1tdqxY4d++OEH7d27V88995xCoZAyMjKU
+      kpKiQ4cOKTY2VkuWLNH+/fs1Pj6u9evX64MPPtD4+Li8Xq82bNhw019rXD/GAKZYc3OzhoaG
+      dOLECU1MTMjlcqmjo0Px8fH6/PPPtXbtWq1Zs+aaE4tdmbqhsrJSp0+fVmNjo3bs2KHy8nJ9
+      8sknevbZZ1VSUqLW1lbNnDlTNTU1Sk5OVnV1tRwOh5qamuR2u3XnnXeqqanpqm1nZ2eroKBA
+      BQUF/3NXBC5raGjQ6Oiofv75Zx07dkxZWVn68ssv1dXVpaioKKWmpmrbtm3X/MSclJSkpqam
+      yFElR48eVV5enmpqanTkyBGNj49r5cqVqqysVF9fnx5++GFVVFQoJydHHo9H1dXVOnfuXGR7
+      RUVFqq+vVzAYVGZmpqTL8zTFxcVFbuP1elVVVSWv16uJiQn5/X4lJSXp+PHjGh8fV0pKirZs
+      2aL6+nq9+OKLys3N1YULF9TW1hbZhXQj13SYKhPhsC6dPXvNy+RNmmDwZiIAU6i/v1+xsbFK
+      SkpSIBDQ119/rby8PO3Zs0cFBQVKSUnRRx99FBk8am9v/9U+eenqNWBnzJihYDConp4ezZo1
+      S52dners7JTP5/vV7R0Oh3w+n2JiYlRSUqIlS5Zctd3u7m719fUpJyfn/zrWcLuYnJxUMBhU
+      VlaWHnroITU0NCg/P1/79u1TWlqaEhMT1d7ergMHDmh4eFgXL1686nBB6fLUwLW1tZF98vHx
+      8Tp58qS+//77yC6g//x7R0dH6+TJk7p48eJvRiU/P18HDhyQ3++P7NJZvHix6urq9O2336q7
+      uzuyTYfDod7eXn3zzTdavnx55PZX5hVKTEzUW2+9pba2Nk2fPl1xcXHKzMzUk08+ecssRXk9
+      widOqHfT3695CZ86NdUP8Ya7bSaD+yvumx4YGFAgEFB2drYyMjI0NjamQCCg8+fPq6SkRHff
+      fbfuuOMOhUIhRUVFKT4+XjExMXK73XI4HIqOjlZaWppiY2M1e/Zsud1uFRUV6eDBg4qKilJp
+      aanee+89+f1+5eXlKTo6WqmpqXI6nZGfhYWFOnfunE6cOKF58+ZdNYPljz/+qJiYGM2efesP
+      fN0K74FLly4pNjZWDz74oDIyMjQyMqJAIKDBwUEVFRUpKSlJfr9fY2Nj6unpUWFhobq7u5We
+      ni6HwyGXy6WFCxcqJiZGOTk5io6OVk5OjoaHh9XS0qKKigq53W75fD55vV653W5lZWWppaUl
+      8i0uNTVVLpdL6enp8ng8Sk5OVltbm1auXBmZTtzv9yscDuvIkSO65557lJCQoLS0NDmdTs2f
+      P19nzpxRKBRSIBCQ3++Xz+eT2+1WZmamRkdHderUKS1atEi5ubk6fPiwPB5P5DlMpeudDO5S
+      X58uHjp8zetnFi3X9F9ew/b2dg0PD8vj8aijo0Nut/t3J/5rbGyU2+2OPLbW1lYlJiZOeTg5
+      CugW1tnZqTfeeEOStHHjRj6F/46/wntgbGxMzz//vEZGRlRWVqbs7Oz/++/88MMP1dvbqzVr
+      1lz3P+j6+no1NjYqMTFR69evn5IFTH7P9R4FNHr0qPr+sfua1yft2qnoXwbVX375ZfX29mrn
+      zp169dVXVV5eHvkGlZ6ersnJSYVCIQ0MDCgtLU1vvvmmMjMzlZSUpLvuukvt7e3KzMzUTz/9
+      pFAoJKfTqZSUFJ05cyZyJvHw8LBcLldkRuL4+PjIOg83asZTAoDbAu8B3MwAvPbaa0pISFB8
+      fLyOHTumsrIyvfLKK1q6dKk6OjpUXFysuro6LV26VIODg5Gj7Pr7+7VixQp99tln2rBhg6qr
+      qxUIBNTS0qKqqiq9/fbbcjqdCoVCiouLU2trq4qLi/XFF19o8+bNqq2t1apVq27I4lASYwAA
+      8KcsX75chw4dUjgc1tmzZzVv3jw98sgjcjqdCofDWrZsmR577DGNjo5q+vTpKikp0eOPP65g
+      MBiZGC4hIUFPPPGE5syZo6GhIfX392tgYEB9fX2anJzU6tWrVVxcrIULF6q5uVkXLly4oQsN
+      EQAA+BMcDodWrFihxsZG+Xw+BYNBBYNBDQ4O/mr32MTEhLq6ulRfX3/NdZF7eno0MTEROVpL
+      +vdym8uWLdPrr7+u+++//4aOtXAeAAD8QaWlpYqLi9PixYv1zDPPyOfzae3atfrqq6+0ceNG
+      TZs2LbKiXmlpqSSpo6NDRUVFuvfeeyP/2K/MGProo48qOTlZg4ODio6O1urVq+V0OiOf9l0u
+      l9LS0vTAAw/c0OdxW4wBDA8P37Q1T3Fr4j2AK2t//9nB6fHBQY0e77jm9TEL5mvaTVpr+r99
+      /PHH8ng8ysnJuaHbvS0CAAD44xgDAACjCAAAGEUAAMAoAgAARhEAADCKAACAUQQAAIwiAABg
+      FAEAAKMIAAAYRQAAwCgCAABGEQAAMIoAAIBRBAAAjCIAAGAUAQAAowgAABhFAADAKAIAAEYR
+      AAAwigAAgFEEAACMIgAAYBQBAACjCAAAGEUAAMAoAgAARhEAADCKAACAUQQAAIwiAABgFAEA
+      AKMIAAAYRQAAwCgCAABGEQAAMIoAAIBRBAAAjCIAAGAUAQAAowgAABhFAADAKAIAAEYRAAAw
+      igAAgFEEAACMIgAAYBQBAACjCAAAGEUAAMAoAgAARhEAADCKAACAUQQAAIwiAABgFAEAAKMI
+      AAAYRQAAwCgCAABGEQAAMIoAAIBRBAAAjCIAAGAUAQAAowgAABhFAADAKAIAAEYRAAAwigAA
+      gFEEAACMIgAAYBQBAACjCAAAGEUAAMAoAgAARhEAADCKAACAUQQAAIwiAABgFAEAAKMIAAAY
+      RQAAwCgCAABGEQAAMIoAAIBRBAAAjCIAAGAUAQAAowgAABhFAADAKAIAAEYRAAAwigAAgFEE
+      AACMIgAAYBQBAACjCAAAGEUAAMAoAgAARhEAADCKAACAUQQAAIwiAABgFAEAAKMIAAAYRQAA
+      wCgCAABGEQAAMIoAAIBRBAAAjCIAAGAUAQAAowgAABhFAADAKAIAAEYRAAAwigAAgFEEAACM
+      IgAAYBQBAACjCAAAGEUAAMAoAgAARhEAADCKAACAUQQAAIwiAABgFAEAAKMIAAAYRQAAwCgC
+      AABGEQAAMIoAAIBRBAAAjCIAAGAUAQAAowgAABhFAADAKAIAAEYRAAAwigAAgFEEAACMIgAA
+      YBQBAACjCAAAGEUAAMAoAgAARhEAADCKAACAUQQAAIwiAABgFAEAAKMIAAAYRQAAwCgCAABG
+      EQAAMIoAAIBRBAAAjCIAAGAUAQAAowgAABhFAADAKAIAAEYRAAAwigAAgFEEAACMIgAAYBQB
+      AACjCAAAGEUAAMAoAgAARhEAADCKAACAUQQAAIwiAABgFAEAAKP+BaooBqDmCm3EAAAAAElF
+      TkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
